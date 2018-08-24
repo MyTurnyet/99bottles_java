@@ -27,21 +27,12 @@ public class Bottles {
                         "1 bottle of beer." + LINE_SEPARATOR +
                         "Take it down and pass it around, " +
                         "no more bottles of beer on the wall." + LINE_SEPARATOR;
-            case 2:
-                return number + " bottles of beer on the wall, " +
-                        number + " bottles of beer." + LINE_SEPARATOR +
-                        "Take one down and pass it around, " +
-                        (number - 1) + " " + container(number - 1) + " of beer on the wall." + LINE_SEPARATOR;
             default:
                 return number + " bottles of beer on the wall, " +
                         number + " bottles of beer." + LINE_SEPARATOR +
                         "Take one down and pass it around, " +
                         (number - 1) + " " + container(number - 1) + " of beer on the wall." + LINE_SEPARATOR;
         }
-    }
-
-    private String container() {
-        return container(-1);
     }
 
     private String container(int number) {

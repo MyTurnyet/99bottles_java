@@ -40,6 +40,7 @@ public class Bottles {
         }
     }
 
-    private String container(int number) {
+    private String container() {
+        return "bottles";
     }
 }

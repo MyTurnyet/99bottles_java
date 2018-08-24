@@ -39,4 +39,12 @@ public class Bottles {
                         (number - 1) + " bottles of beer on the wall." + LINE_SEPARATOR;
         }
     }
+
+    private String container(int number) {
+        if (number == 1) {
+            return "bottle";
+        } else {
+            return "bottles";
+        }
+    }
 }

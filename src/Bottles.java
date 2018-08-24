@@ -32,6 +32,16 @@ public class Bottles {
                         "2 bottles of beer." + LINE_SEPARATOR +
                         "Take one down and pass it around, " +
                         "1 bottle of beer on the wall." + LINE_SEPARATOR;
+            case 6:
+                return "1 six-pack of beer on the wall, " +
+                        "1 six-pack of beer." + LINE_SEPARATOR +
+                        "Take one down and pass it around, " +
+                        "5 bottles of beer on the wall." + LINE_SEPARATOR;
+            case 7:
+                return "7 bottles of beer on the wall, " +
+                        "7 bottles of beer." + LINE_SEPARATOR +
+                        "Take one down and pass it around, " +
+                        "1 six-pack of beer on the wall." + LINE_SEPARATOR;
             default:
                 return number + " bottles of beer on the wall, " +
                         number + " bottles of beer." + LINE_SEPARATOR +

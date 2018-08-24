@@ -41,6 +41,10 @@ public class Bottles {
     }
 
     private String container() {
+        return container(-1);
+    }
+
+    private String container(int number) {
         return "bottles";
     }
 }

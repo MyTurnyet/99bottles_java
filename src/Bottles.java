@@ -31,7 +31,7 @@ public class Bottles {
                 return number + " bottles of beer on the wall, " +
                         number + " bottles of beer." + LINE_SEPARATOR +
                         "Take one down and pass it around, " +
-                        (number - 1) + " bottle of beer on the wall." + LINE_SEPARATOR;
+                        (number - 1) + " " + container(number - 1) + " of beer on the wall." + LINE_SEPARATOR;
             default:
                 return number + " bottles of beer on the wall, " +
                         number + " bottles of beer." + LINE_SEPARATOR +

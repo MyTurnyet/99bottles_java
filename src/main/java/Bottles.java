@@ -24,12 +24,12 @@ public class Bottles {
                         "99 bottles of beer on the wall." + LINE_SEPARATOR;
             case 1:
                 return number + " " + container(number) + " of beer on the wall, " +
-                        "1 bottle of beer." + LINE_SEPARATOR +
+                        number + " " + container(number) + " of beer." + LINE_SEPARATOR +
                         "Take it down and pass it around, " +
                         "no more bottles of beer on the wall." + LINE_SEPARATOR;
             default:
                 return number + " " + container(number) + " of beer on the wall, " +
-                        number + " bottles of beer." + LINE_SEPARATOR +
+                        number + " " + container(number) + " of beer." + LINE_SEPARATOR +
                         "Take one down and pass it around, " +
                         (number - 1) + " " + container(number - 1) + " of beer on the wall." + LINE_SEPARATOR;
         }

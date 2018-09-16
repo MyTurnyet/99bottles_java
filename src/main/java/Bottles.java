@@ -43,11 +43,7 @@ public class Bottles {
         }
     }
     
-    String pronoun() {
-        return "one";
-    }
-    
-    String pronoun(int number) {
+    private String pronoun(int number) {
         if(number == 1){
             return "it";
         }

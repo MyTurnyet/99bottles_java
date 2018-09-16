@@ -42,4 +42,8 @@ public class Bottles {
             return "bottles";
         }
     }
+    
+    String pronoun() {
+        return null;
+    }
 }

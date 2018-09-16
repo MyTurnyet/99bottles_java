@@ -30,7 +30,7 @@ public class Bottles {
             default:
                 return number + " " + container(number) + " of beer on the wall, " +
                         number + " " + container(number) + " of beer." + LINE_SEPARATOR +
-                        "Take one down and pass it around, " +
+                        "Take " + pronoun() + " down and pass it around, " +
                         (number - 1) + " " + container(number - 1) + " of beer on the wall." + LINE_SEPARATOR;
         }
     }

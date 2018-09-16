@@ -46,4 +46,8 @@ public class Bottles {
     String pronoun() {
         return "one";
     }
+    
+    String pronoun(int number) {
+        return "one";
+    }
 }

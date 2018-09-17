@@ -19,7 +19,7 @@ public class Bottles {
     public String verse(int number) {
         switch (number) {
             case 0:
-                return capitalize(quantity(number)) + " bottles of beer on the wall, " +
+                return capitalize(quantity(number)) + " " + container(number) + " of beer on the wall, " +
                         "no more bottles of beer." + LINE_SEPARATOR +
                         "Go to the store and buy some more, " +
                         "99 bottles of beer on the wall." + LINE_SEPARATOR;

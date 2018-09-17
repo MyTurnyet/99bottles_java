@@ -26,7 +26,7 @@ public class Bottles {
                 return number + " " + container(number) + " of beer on the wall, " +
                         number + " " + container(number) + " of beer." + LINE_SEPARATOR +
                         "Take " + pronoun(number) + " down and pass it around, " +
-                        "no more bottles of beer on the wall." + LINE_SEPARATOR;
+                        quantity() + " bottles of beer on the wall." + LINE_SEPARATOR;
             default:
                 return number + " " + container(number) + " of beer on the wall, " +
                         number + " " + container(number) + " of beer." + LINE_SEPARATOR +
@@ -52,6 +52,6 @@ public class Bottles {
     }
     
     private String quantity() {
-        return "No more";
+        return "no more";
     }
 }

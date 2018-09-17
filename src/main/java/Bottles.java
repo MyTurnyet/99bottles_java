@@ -56,6 +56,9 @@ public class Bottles {
     }
     
     private String quantity(int number) {
-        return "no more";
+        if(number == 0){
+            return "No more";
+        }
+        return String.valueOf(number);
     }
 }

@@ -1,5 +1,6 @@
 import static java.util.stream.Collectors.joining;
 import static java.util.stream.IntStream.rangeClosed;
+import static org.apache.commons.lang3.StringUtils.capitalize;
 
 public class Bottles {
     private static final String LINE_SEPARATOR = System.getProperty("line.separator");
@@ -18,7 +19,7 @@ public class Bottles {
     public String verse(int number) {
         switch (number) {
             case 0:
-                return "No more bottles of beer on the wall, " +
+                return capitalize(quantity(number)) + " bottles of beer on the wall, " +
                         "no more bottles of beer." + LINE_SEPARATOR +
                         "Go to the store and buy some more, " +
                         "99 bottles of beer on the wall." + LINE_SEPARATOR;

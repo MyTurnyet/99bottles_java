@@ -54,4 +54,8 @@ public class Bottles {
     private String quantity() {
         return "no more";
     }
+    
+    private String quantity(int number) {
+        return "no more";
+    }
 }

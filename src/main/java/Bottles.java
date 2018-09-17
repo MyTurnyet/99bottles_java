@@ -22,12 +22,7 @@ public class Bottles {
                         "no more bottles of beer." + LINE_SEPARATOR +
                         "Go to the store and buy some more, " +
                         "99 bottles of beer on the wall." + LINE_SEPARATOR;
-            case 1:
-                return number + " " + container(number) + " of beer on the wall, " +
-                        number + " " + container(number) + " of beer." + LINE_SEPARATOR +
-                        "Take " + pronoun(number) + " down and pass it around, " +
-                        quantity(number - 1) + " " + container(number - 1) + " of beer on the wall." + LINE_SEPARATOR;
-            default:
+             default:
                 return number + " " + container(number) + " of beer on the wall, " +
                         number + " " + container(number) + " of beer." + LINE_SEPARATOR +
                         "Take " + pronoun(number) + " down and pass it around, " +

@@ -20,12 +20,12 @@ public class Bottles {
         switch (number) {
             case 0:
                 return capitalize(quantity(number)) + " " + container(number) + " of beer on the wall, " +
-                        "no more bottles of beer." + LINE_SEPARATOR +
+                        quantity(number) + " " + container(number) + " of beer." + LINE_SEPARATOR +
                         "Go to the store and buy some more, " +
                         "99 bottles of beer on the wall." + LINE_SEPARATOR;
              default:
                 return capitalize(quantity(number)) + " " + container(number) + " of beer on the wall, " +
-                        number + " " + container(number) + " of beer." + LINE_SEPARATOR +
+                        quantity(number) + " " + container(number) + " of beer." + LINE_SEPARATOR +
                         "Take " + pronoun(number) + " down and pass it around, " +
                         quantity(number - 1) + " " + container(number - 1) + " of beer on the wall." + LINE_SEPARATOR;
         }

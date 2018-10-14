@@ -21,12 +21,12 @@ public class Bottles {
             case 0:
                 return capitalize(quantity(number)) + " " + container(number) + " of beer on the wall, " +
                         quantity(number) + " " + container(number) + " of beer." + LINE_SEPARATOR +
-                        "Go to the store and buy some more, " +
+                        action(number) + ", " +
                         "99 bottles of beer on the wall." + LINE_SEPARATOR;
              default:
                 return capitalize(quantity(number)) + " " + container(number) + " of beer on the wall, " +
                         quantity(number) + " " + container(number) + " of beer." + LINE_SEPARATOR +
-                        "Take " + pronoun(number) + " down and pass it around, " +
+                        action(number) + ", " +
                         quantity(number - 1) + " " + container(number - 1) + " of beer on the wall." + LINE_SEPARATOR;
         }
     }

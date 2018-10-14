@@ -53,4 +53,12 @@ public class Bottles {
         }
         return String.valueOf(number);
     }
+    
+    private String action(int number) {
+        if(number == 0){
+            return "Go to the store and buy some more";
+        }
+        
+        return "Take " + pronoun(number) + " down and pass it around";
+    }
 }

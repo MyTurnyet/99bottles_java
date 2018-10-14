@@ -22,7 +22,7 @@ public class Bottles {
                 return capitalize(quantity(number)) + " " + container(number) + " of beer on the wall, " +
                         quantity(number) + " " + container(number) + " of beer." + LINE_SEPARATOR +
                         action(number) + ", " +
-                        quantity(99) + " " + container(number - 1) + " of beer on the wall." + LINE_SEPARATOR;
+                        quantity(successor(number)) + " " + container(number - 1) + " of beer on the wall." + LINE_SEPARATOR;
              default:
                 return capitalize(quantity(number)) + " " + container(number) + " of beer on the wall, " +
                         quantity(number) + " " + container(number) + " of beer." + LINE_SEPARATOR +

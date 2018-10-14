@@ -17,7 +17,7 @@ public class Bottles {
     }
 
     public String verse(int number) {
-        switch (number) {
+     /* switch (number) {
             case 0:
                 return capitalize(quantity(number)) + " " + container(number) + " of beer on the wall, " +
                         quantity(number) + " " + container(number) + " of beer." + LINE_SEPARATOR +
@@ -28,7 +28,12 @@ public class Bottles {
                         quantity(number) + " " + container(number) + " of beer." + LINE_SEPARATOR +
                         action(number) + ", " +
                         quantity(successor(number)) + " " + container(successor(number)) + " of beer on the wall." + LINE_SEPARATOR;
-        }
+        }*/
+        
+        return capitalize(quantity(number)) + " " + container(number) + " of beer on the wall, " +
+        quantity(number) + " " + container(number) + " of beer." + LINE_SEPARATOR +
+        action(number) + ", " +
+        quantity(successor(number)) + " " + container(successor(number)) + " of beer on the wall." + LINE_SEPARATOR;
     }
 
     private String container(int number) {

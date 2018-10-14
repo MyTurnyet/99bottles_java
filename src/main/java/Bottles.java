@@ -22,7 +22,7 @@ public class Bottles {
                 return capitalize(quantity(number)) + " " + container(number) + " of beer on the wall, " +
                         quantity(number) + " " + container(number) + " of beer." + LINE_SEPARATOR +
                         action(number) + ", " +
-                        "99 bottles of beer on the wall." + LINE_SEPARATOR;
+                        quantity(99) + " bottles of beer on the wall." + LINE_SEPARATOR;
              default:
                 return capitalize(quantity(number)) + " " + container(number) + " of beer on the wall, " +
                         quantity(number) + " " + container(number) + " of beer." + LINE_SEPARATOR +
@@ -48,14 +48,10 @@ public class Bottles {
     }
     
     private String quantity(int number) {
-        switch(number){
-        case -1:
-            return "99";
-        case 0:
+        if(number == 0){
             return "no more";
-        default:
-            return String.valueOf(number);
         }
+        return String.valueOf(number);
     }
     
     private String action(int number) {

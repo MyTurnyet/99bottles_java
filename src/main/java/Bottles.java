@@ -62,8 +62,10 @@ public class Bottles {
         return "Take " + pronoun(number) + " down and pass it around";
     }
     
-    private int successor(int number) {
-       
-        return number - 1;
+    private int successor(int number) {       
+        if (number == 0) {
+            return 99;
+        }
+        return number - 1;    
     }
 }

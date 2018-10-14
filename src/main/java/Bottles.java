@@ -48,10 +48,14 @@ public class Bottles {
     }
     
     private String quantity(int number) {
-        if(number == 0){
+        switch(number){
+        case -1:
+            return "99";
+        case 0:
             return "no more";
+        default:
+            return String.valueOf(number);
         }
-        return String.valueOf(number);
     }
     
     private String action(int number) {

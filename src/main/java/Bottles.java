@@ -30,32 +30,21 @@ public class Bottles {
     }
     
     private String pronoun(int number) {
-        if(number == 1){
-            return "it";
-        }
-        
-        return "one";
+        return (new BottleNumber(number)).pronoun(number);
     }
     
     private String quantity(int number) {
-        if(number == 0){
-            return "no more";
-        }
-        return String.valueOf(number);
+        return (new BottleNumber(number)).quantity(number);
+
     }
     
     private String action(int number) {
-        if(number == 0){
-            return "Go to the store and buy some more";
-        }
-        
-        return "Take " + pronoun(number) + " down and pass it around";
+        return (new BottleNumber(number)).action(number);
+
     }
     
     private int successor(int number) {       
-        if (number == 0) {
-            return 99;
-        }
-        return number - 1;    
+        return (new BottleNumber(number)).successor(number);
+  
     }
 }

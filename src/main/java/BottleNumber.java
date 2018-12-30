@@ -9,10 +9,6 @@ public class BottleNumber {
     }
     
     String container() {
-        if (number == 1) {
-            return "bottle";
-        }
-
         return "bottles";
     }
 

@@ -28,22 +28,4 @@ public class Bottles {
    
     }
 
-    private String container(int number) {
-        return (new BottleNumber(number)).container();
-    }
-    
-    private String quantity(int number) {
-        return (new BottleNumber(number)).quantity();
-
-    }
-    
-    private String action(int number) {
-        return (new BottleNumber(number)).action();
-
-    }
-    
-    private int successor(int number) {       
-        return (new BottleNumber(number)).successor();
-  
-    }
 }

@@ -5,9 +5,11 @@ public class BottleNumber6 extends BottleNumber {
         super(number);
     }
 
+    String container() {
+        return "six-pack";
+    }
     
-    @Override
-    public String toString() {
-        return "1 six-pack";
+    String quantity() {
+        return "1";
     }
 }

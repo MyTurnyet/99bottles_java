@@ -16,7 +16,7 @@ public class BottleNumber {
         return "bottles";
     }
 
-    String pronoun(int number) {
+    String pronoun() {
         if (number == 1) {
             return "it";
         }
@@ -24,22 +24,22 @@ public class BottleNumber {
         return "one";
     }
 
-    String quantity(int number) {
+    String quantity() {
         if (number == 0) {
             return "no more";
         }
         return String.valueOf(number);
     }
 
-    String action(int number) {
+    String action() {
         if (number == 0) {
             return "Go to the store and buy some more";
         }
 
-        return "Take " + pronoun(number) + " down and pass it around";
+        return "Take " + pronoun() + " down and pass it around";
     }
 
-    int successor(int number) {
+    int successor() {
         if (number == 0) {
             return 99;
         }

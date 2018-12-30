@@ -29,22 +29,18 @@ public class Bottles {
         return (new BottleNumber(number)).container();
     }
     
-    private String pronoun(int number) {
-        return (new BottleNumber(number)).pronoun(number);
-    }
-    
     private String quantity(int number) {
-        return (new BottleNumber(number)).quantity(number);
+        return (new BottleNumber(number)).quantity();
 
     }
     
     private String action(int number) {
-        return (new BottleNumber(number)).action(number);
+        return (new BottleNumber(number)).action();
 
     }
     
     private int successor(int number) {       
-        return (new BottleNumber(number)).successor(number);
+        return (new BottleNumber(number)).successor();
   
     }
 }

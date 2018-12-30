@@ -20,6 +20,7 @@ public class Bottles {
 
         BottleNumber bottleNumber = bottleNumberFor(number);
         BottleNumber nextBottleNumber = bottleNumberFor(bottleNumber.successor());
+        //BottleNumber nextBottleNumber = bottleNumber.successor();
 
         return capitalize(bottleNumber.toString()) + " of beer on the wall, " + bottleNumber + " of beer."
                 + LINE_SEPARATOR + bottleNumber.action() + ", " + nextBottleNumber + " of beer on the wall."

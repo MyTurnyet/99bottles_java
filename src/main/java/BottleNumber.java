@@ -1,6 +1,11 @@
 
 public class BottleNumber {
 
+    private int number;
+    
+    public BottleNumber(int number) {
+        this.number = number;
+    }
     
     String container(int number) {
         if (number == 1) {

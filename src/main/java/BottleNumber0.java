@@ -13,8 +13,8 @@ public class BottleNumber0 extends BottleNumber {
         return "Go to the store and buy some more";
     }
 
-    int successor() {
-        return 99;
+    BottleNumber successor() {
+        return BottleNumber.createFor(99);
     }
 
 }

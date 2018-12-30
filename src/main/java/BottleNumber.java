@@ -55,8 +55,8 @@ public class BottleNumber {
         return "Take " + pronoun() + " down and pass it around";
     }
 
-    int successor() {
-        return number - 1;
+    BottleNumber successor() {
+        return BottleNumber.createFor(number-1);
     }
     
     @Override

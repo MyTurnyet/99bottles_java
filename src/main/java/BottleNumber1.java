@@ -8,4 +8,8 @@ public class BottleNumber1 extends BottleNumber {
     String container() {
         return "bottle";
     }
+
+    String pronoun() {
+        return "it";
+    }
 }

@@ -13,10 +13,6 @@ public class BottleNumber {
     }
 
     String pronoun() {
-        if (number == 1) {
-            return "it";
-        }
-
         return "one";
     }
 

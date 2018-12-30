@@ -8,4 +8,8 @@ public class BottleNumber6 extends BottleNumber {
     String container() {
         return "six-pack";
     }
+    
+    String quantity() {
+        return "1";
+    }
 }

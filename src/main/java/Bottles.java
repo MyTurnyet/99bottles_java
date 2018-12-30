@@ -27,11 +27,6 @@ public class Bottles {
 
     private String container(int number) {
         return (new BottleNumber(number)).container(number);
-        /*
-         * if (number == 1) { return "bottle"; }
-         * 
-         * return "bottles";
-         */
     }
     
     private String pronoun(int number) {

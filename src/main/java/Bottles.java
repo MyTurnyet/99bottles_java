@@ -18,39 +18,14 @@ public class Bottles {
 
     public String verse(int number) {
 
-        BottleNumber bottleNumber = bottleNumberFor(number);
-        BottleNumber nextBottleNumber = bottleNumberFor(bottleNumber.successor());
+        BottleNumber bottleNumber = BottleNumber.createFor(number);
+        BottleNumber nextBottleNumber = BottleNumber.createFor(bottleNumber.successor());
         //BottleNumber nextBottleNumber = bottleNumber.successor();
 
         return capitalize(bottleNumber.toString()) + " of beer on the wall, " + bottleNumber + " of beer."
                 + LINE_SEPARATOR + bottleNumber.action() + ", " + nextBottleNumber + " of beer on the wall."
                 + LINE_SEPARATOR;
 
-    }
-
-    private BottleNumber bottleNumberFor(int number) {
-
-        Class<? extends BottleNumber> clazz;
-
-        switch (number) {
-        case 0:
-            clazz = BottleNumber0.class;
-            break;
-        case 1:
-            clazz = BottleNumber1.class;
-            break;
-        default:
-            clazz = BottleNumber.class;
-            break;
-
-        }
-
-        try {
-            return clazz.getConstructor(Integer.class).newInstance(number);
-        } catch (InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException
-                | NoSuchMethodException | SecurityException e) {
-            throw new RuntimeException(e);
-        }
     }
 
 }

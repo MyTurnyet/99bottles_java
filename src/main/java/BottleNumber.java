@@ -1,7 +1,7 @@
 
 public class BottleNumber {
 
-    private final int number;
+    protected final int number;
 
 
     public BottleNumber(int number) {

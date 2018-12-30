@@ -25,9 +25,6 @@ public class BottleNumber {
     }
 
     String quantity() {
-        if (number == 0) {
-            return "no more";
-        }
         return String.valueOf(number);
     }
 

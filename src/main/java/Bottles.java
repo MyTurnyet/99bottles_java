@@ -19,11 +19,12 @@ public class Bottles {
     public String verse(int number) {
 
         BottleNumber bottleNumber = new BottleNumber(number);
+        BottleNumber nextBottleNumber = new BottleNumber(bottleNumber.successor());
         
-        return capitalize(quantity(number)) + " " + container(number) + " of beer on the wall, " +
-        quantity(number) + " " + container(number) + " of beer." + LINE_SEPARATOR +
+        return capitalize(bottleNumber.quantity()) + " " + bottleNumber.container() + " of beer on the wall, " +
+        bottleNumber.quantity() + " " + bottleNumber.container() + " of beer." + LINE_SEPARATOR +
         bottleNumber.action() + ", " +
-        quantity(successor(number)) + " " + container(successor(number)) + " of beer on the wall." + LINE_SEPARATOR;
+        nextBottleNumber.quantity() + " " + nextBottleNumber.container() + " of beer on the wall." + LINE_SEPARATOR;
    
     }
 

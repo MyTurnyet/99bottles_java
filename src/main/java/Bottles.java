@@ -26,6 +26,7 @@ public class Bottles {
     }
 
     private String container(int number) {
+        (new BottleNumber(number)).container(number);
         if (number == 1) {
             return "bottle";
         } 

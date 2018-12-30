@@ -15,6 +15,9 @@ public class BottleNumber {
             break;
         case 1:
             clazz = BottleNumber1.class;
+            break;        
+        case 6:
+            clazz = BottleNumber6.class;
             break;
         default:
             clazz = BottleNumber.class;

@@ -1,7 +1,7 @@
 
 public class Bottles {
 
-    String verse(int number) {
+    String verse(int i) {
 
         return null;
     }

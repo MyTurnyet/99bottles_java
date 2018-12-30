@@ -17,10 +17,10 @@ public class Bottles {
     public String verse(int number) {
 
         BottleNumber bottleNumber = BottleNumber.createFor(number);
-        BottleNumber nextBottleNumber = bottleNumber.successor();
 
         return capitalize(bottleNumber.toString()) + " of beer on the wall, " + bottleNumber + " of beer."
-                + LINE_SEPARATOR + bottleNumber.action() + ", " + nextBottleNumber + " of beer on the wall."
+                + LINE_SEPARATOR + bottleNumber.action() + ", " 
+                + bottleNumber.successor() + " of beer on the wall."
                 + LINE_SEPARATOR;
 
     }

@@ -6,10 +6,6 @@ public class BottleNumber1 extends BottleNumber {
     }
 
     String container() {
-        if (number == 1) {
-            return "bottle";
-        }
-
-        return "bottles";
+        return "bottle";
     }
 }

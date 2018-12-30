@@ -12,38 +12,43 @@ public class Bottles {
     }
 
     public String verses(int starting, int ending) {
-        return rangeClosed(ending, starting)
-                .map(i -> (ending + starting) - i)
-                .mapToObj(bottleNumber -> verse(bottleNumber))
-                .collect(joining(LINE_SEPARATOR));
+        return rangeClosed(ending, starting).map(i -> (ending + starting) - i)
+                .mapToObj(bottleNumber -> verse(bottleNumber)).collect(joining(LINE_SEPARATOR));
     }
 
     public String verse(int number) {
 
         BottleNumber bottleNumber = bottleNumberFor(number);
         BottleNumber nextBottleNumber = bottleNumberFor(bottleNumber.successor());
-        
-        return capitalize(bottleNumber.toString()) + " of beer on the wall, " +
-        bottleNumber + " of beer." + LINE_SEPARATOR +
-        bottleNumber.action() + ", " +
-        nextBottleNumber + " of beer on the wall." + LINE_SEPARATOR;
-   
+
+        return capitalize(bottleNumber.toString()) + " of beer on the wall, " + bottleNumber + " of beer."
+                + LINE_SEPARATOR + bottleNumber.action() + ", " + nextBottleNumber + " of beer on the wall."
+                + LINE_SEPARATOR;
+
     }
 
     private BottleNumber bottleNumberFor(int number) {
-        
+
         Class<? extends BottleNumber> clazz;
-        if(number == 0 ) {
+
+        switch (number) {
+        case 0:
             clazz = BottleNumber0.class;
-        }else {
+            break;
+        case 1:
+            clazz = BottleNumber1.class;
+            break;
+        default:
             clazz = BottleNumber.class;
+            break;
+
         }
-        
+
         try {
             return clazz.getConstructor(Integer.class).newInstance(number);
         } catch (InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException
                 | NoSuchMethodException | SecurityException e) {
-           throw new RuntimeException(e);
+            throw new RuntimeException(e);
         }
     }
 

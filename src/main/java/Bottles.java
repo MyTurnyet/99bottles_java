@@ -28,4 +28,8 @@ public class Bottles {
    
     }
 
+    private BottleNumber bottleNumberFor(int number) {
+        return new BottleNumber(number);
+    }
+
 }

@@ -2,8 +2,6 @@ import static java.util.stream.Collectors.joining;
 import static java.util.stream.IntStream.rangeClosed;
 import static org.apache.commons.lang3.StringUtils.capitalize;
 
-import java.lang.reflect.InvocationTargetException;
-
 public class Bottles {
     private static final String LINE_SEPARATOR = System.getProperty("line.separator");
 

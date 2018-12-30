@@ -29,6 +29,9 @@ public class Bottles {
     }
 
     private BottleNumber bottleNumberFor(int number) {
+        if(number == 0 ) {
+            return new BottleNumber0(number);
+        }
         return new BottleNumber(number);
     }
 

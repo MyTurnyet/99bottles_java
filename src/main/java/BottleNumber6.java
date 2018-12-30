@@ -5,4 +5,7 @@ public class BottleNumber6 extends BottleNumber {
         super(number);
     }
 
+    String container() {
+        return "six-pack";
+    }
 }

@@ -18,6 +18,8 @@ public class Bottles {
 
     public String verse(int number) {
 
+        BottleNumber bottleNumber = new BottleNumber(number);
+        
         return capitalize(quantity(number)) + " " + container(number) + " of beer on the wall, " +
         quantity(number) + " " + container(number) + " of beer." + LINE_SEPARATOR +
         action(number) + ", " +

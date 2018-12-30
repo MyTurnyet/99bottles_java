@@ -25,6 +25,7 @@ public class Bottles {
    
     }
 
+    //guard clause
     private String container(int number) {
         if (number == 1) {
             return "bottle";
@@ -33,19 +34,18 @@ public class Bottles {
         return "bottles";
     }
     
+    //verbose conditional
     private String pronoun(int number) {
         if(number == 1){
             return "it";
+        }else {       
+            return "one";
         }
-        
-        return "one";
     }
     
+    //ternary
     private String quantity(int number) {
-        if(number == 0){
-            return "no more";
-        }
-        return String.valueOf(number);
+        return (number == 0) ? "no more" : String.valueOf(number);
     }
     
     private String action(int number) {

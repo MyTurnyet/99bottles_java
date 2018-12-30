@@ -4,11 +4,7 @@ public class BottleNumber {
 
     protected final int number;
 
-    
-    public static BottleNumber createFor(BottleNumber number) {
-        return number;
-    }
-    
+       
     public static BottleNumber createFor(int number) {
 
         Class<? extends BottleNumber> clazz;

@@ -46,6 +46,10 @@ public class BottleNumber {
         return number - 1;
     }
     
+    @Override
+    public String toString() {
+        return quantity() + " " + container();
+    }
     
     int getNumber() {
         return number;

@@ -8,7 +8,7 @@ public class BottleNumber {
         this.number = number;
     }
     
-    String container(int _number) {
+    String container() {
         if (number == 1) {
             return "bottle";
         }

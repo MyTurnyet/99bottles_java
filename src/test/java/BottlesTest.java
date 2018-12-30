@@ -364,7 +364,7 @@ public class BottlesTest {
                 "Take one down and pass it around, 7 bottles of beer on the wall." + LINE_SEPARATOR +
                 "" + LINE_SEPARATOR +
                 "7 bottles of beer on the wall, 7 bottles of beer." + LINE_SEPARATOR +
-                "Take one down and pass it around, 6 bottles of beer on the wall." + LINE_SEPARATOR +
+                "Take one down and pass it around, 1 six-pack of beer on the wall." + LINE_SEPARATOR +
                 "" + LINE_SEPARATOR +
                 "1 six-pack of beer on the wall, 1 six-pack of beer." + LINE_SEPARATOR +
                 "Take one down and pass it around, 5 bottles of beer on the wall." + LINE_SEPARATOR +

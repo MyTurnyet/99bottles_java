@@ -18,8 +18,10 @@ public class Bottles {
 
     public String verse(int number) {
 
-        BottleNumber bottleNumber = new BottleNumber(number);
-        BottleNumber nextBottleNumber = new BottleNumber(bottleNumber.successor());
+        BottleNumber bottleNumber = (number == 0) ? new BottleNumber0(number) : new BottleNumber(number);
+        
+        int successor = bottleNumber.successor();
+        BottleNumber nextBottleNumber = (successor == 0) ?  new BottleNumber0(successor) : new BottleNumber(successor);
         
         return capitalize(bottleNumber.toString()) + " of beer on the wall, " +
         bottleNumber + " of beer." + LINE_SEPARATOR +

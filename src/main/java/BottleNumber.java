@@ -1,8 +1,9 @@
 
 public class BottleNumber {
 
-    private int number;
-    
+    private final int number;
+
+
     public BottleNumber(int number) {
         this.number = number;
     }
@@ -43,5 +44,10 @@ public class BottleNumber {
             return 99;
         }
         return number - 1;
+    }
+    
+    
+    int getNumber() {
+        return number;
     }
 }

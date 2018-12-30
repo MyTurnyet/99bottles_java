@@ -18,7 +18,7 @@ public class Bottles {
 
         BottleNumber bottleNumber = BottleNumber.createFor(number);
         BottleNumber nextBottleNumber = BottleNumber.createFor(bottleNumber.successor());
-        //BottleNumber nextBottleNumber = bottleNumber.successor();
+        nextBottleNumber = bottleNumber.successor();
 
         return capitalize(bottleNumber.toString()) + " of beer on the wall, " + bottleNumber + " of beer."
                 + LINE_SEPARATOR + bottleNumber.action() + ", " + nextBottleNumber + " of beer on the wall."

@@ -8,21 +8,10 @@ public class BottleNumber {
     public static BottleNumber createFor(int number) {
 
         Class<? extends BottleNumber> clazz;
-
-        switch (number) {
-        case 0:
-            clazz = BottleNumber0.class;
-            break;
-        case 1:
-            clazz = BottleNumber1.class;
-            break;        
-        case 6:
-            clazz = BottleNumber6.class;
-            break;
-        default:
+        try {
+            clazz = (Class<? extends BottleNumber>) Class.forName("BottleNumber" + number);
+        } catch (ClassNotFoundException e1) {
             clazz = BottleNumber.class;
-            break;
-
         }
 
         try {

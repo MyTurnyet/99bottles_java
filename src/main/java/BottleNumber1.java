@@ -5,4 +5,11 @@ public class BottleNumber1 extends BottleNumber {
         super(number);
     }
 
+    String container() {
+        if (number == 1) {
+            return "bottle";
+        }
+
+        return "bottles";
+    }
 }

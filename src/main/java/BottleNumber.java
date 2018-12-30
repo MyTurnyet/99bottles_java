@@ -4,7 +4,7 @@ public class BottleNumber {
     protected final int number;
 
 
-    public BottleNumber(int number) {
+    public BottleNumber(Integer number) {
         this.number = number;
     }
     

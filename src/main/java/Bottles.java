@@ -2,6 +2,8 @@ import static java.util.stream.Collectors.joining;
 import static java.util.stream.IntStream.rangeClosed;
 import static org.apache.commons.lang3.StringUtils.capitalize;
 
+import java.lang.reflect.InvocationTargetException;
+
 public class Bottles {
     private static final String LINE_SEPARATOR = System.getProperty("line.separator");
 
@@ -29,10 +31,20 @@ public class Bottles {
     }
 
     private BottleNumber bottleNumberFor(int number) {
+        
+        Class<? extends BottleNumber> clazz;
         if(number == 0 ) {
-            return new BottleNumber0(number);
+            clazz = BottleNumber0.class;
+        }else {
+            clazz = BottleNumber.class;
         }
-        return new BottleNumber(number);
+        
+        try {
+            return clazz.getConstructor(Integer.class).newInstance(number);
+        } catch (InstantiationException | IllegalAccessException | IllegalArgumentException | InvocationTargetException
+                | NoSuchMethodException | SecurityException e) {
+           throw new RuntimeException(e);
+        }
     }
 
 }

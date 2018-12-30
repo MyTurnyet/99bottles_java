@@ -29,17 +29,10 @@ public class BottleNumber {
     }
 
     String action() {
-        if (number == 0) {
-            return "Go to the store and buy some more";
-        }
-
         return "Take " + pronoun() + " down and pass it around";
     }
 
     int successor() {
-        if (number == 0) {
-            return 99;
-        }
         return number - 1;
     }
     

@@ -8,5 +8,13 @@ public class BottleNumber0 extends BottleNumber {
     String quantity() {
         return "no more";
     }
+    
+    String action() {
+        return "Go to the store and buy some more";
+    }
+
+    int successor() {
+        return 99;
+    }
 
 }

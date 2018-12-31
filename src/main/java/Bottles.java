@@ -3,8 +3,12 @@ public class Bottles {
 
     private static final String LINE_BREAK = System.getProperty("line.separator");
 
-    String verses(int a, int b) {
-        return verse(99) + verse(98);
+    String verses(int starting, int ending) {
+        if(starting == 99) {
+            return verse(99) + verse(98);
+        }
+        
+        return verse(2) + verse(1) + verse(0);
                
     }
     

@@ -27,6 +27,7 @@ public class BottlesTest {
         assertEquals(
                 "99 bottles of beer on the wall, 99 bottles of beer." + LINE_BREAK
                 + "Take one down and pass it around, 98 bottles of beer on the wall." + LINE_BREAK +
+                LINE_BREAK +
                 "98 bottles of beer on the wall, 98 bottles of beer." + LINE_BREAK
                 + "Take one down and pass it around, 97 bottles of beer on the wall." + LINE_BREAK, 
                 actual);
@@ -36,8 +37,8 @@ public class BottlesTest {
     public void testVerses_2_0() throws Exception {
         
         String actual = bottles.verses(2, 0);
-        assertEquals(VERSE_2_BOTTLES + 
-                    VERSE_1_BOTTLE + 
+        assertEquals(VERSE_2_BOTTLES + LINE_BREAK +
+                    VERSE_1_BOTTLE + LINE_BREAK +
                     VERSE_0_BOTTLES, actual);
     }
 

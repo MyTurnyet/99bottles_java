@@ -7,6 +7,12 @@ public class Bottles {
         String theVerse;
 
         switch (number) {
+        case 0:
+            theVerse = "No more bottles of beer on the wall, " + 
+                        "no more bottles of beer." + LINE_BREAK +
+                        "Go to the store and buy some more, " + 
+                        "99 bottles of beer on the wall." + LINE_BREAK;
+            break;
         case 1:
             theVerse = "1 bottle of beer on the wall, " + 
                         "1 bottle of beer." + LINE_BREAK +

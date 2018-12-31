@@ -12,16 +12,9 @@ public class Bottles {
     }
 
     public String verses(int start, int end) {
-        if (start == 99 && end == 98) {
-            return "99 bottles of beer on the wall, 99 bottles of beer." + LINE_BREAK
-                    + "Take one down and pass it around, 98 bottles of beer on the wall." + LINE_BREAK + LINE_BREAK
-                    + "98 bottles of beer on the wall, 98 bottles of beer." + LINE_BREAK
-                    + "Take one down and pass it around, 97 bottles of beer on the wall." + LINE_BREAK;
-        } else if (start == 2) {
-            return verse(2) + LINE_BREAK + verse(1) + LINE_BREAK + verse(0);
-        } else {
-            return "ok";
-        }
+        return descendingRange(start, end)
+                .mapToObj(bottleNumber -> verse(bottleNumber))
+                .collect(joining(LINE_BREAK));
     }
 
     public String verse(int number) {

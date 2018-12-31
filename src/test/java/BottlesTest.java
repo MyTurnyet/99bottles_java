@@ -22,6 +22,12 @@ public class BottlesTest {
     }
     
     @Test
+    public void song() throws Exception {
+        String actual = bottles.song();
+        assertEquals(bottles.verses(99, 0), actual);                
+    }            
+    
+    @Test
     public void verses_99_98() throws Exception {
         String actual = bottles.verses(99, 98);
         assertEquals(

@@ -7,17 +7,17 @@ public class Bottles {
 
     private static final String LINE_BREAK = System.getProperty("line.separator");
 
-    String song() {
+    public String song() {
         return verses(99, 0);
     }
 
-    String verses(int start, int end) {
+    public String verses(int start, int end) {
         return descendingRange(start, end)
                 .mapToObj(bottleNumber -> verse(bottleNumber))
                 .collect(joining(LINE_BREAK));
     }
 
-    String verse(int number) {
+    public String verse(int number) {
         String theVerse;
 
         switch (number) {

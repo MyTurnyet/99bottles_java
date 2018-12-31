@@ -1,4 +1,8 @@
+import static java.util.stream.Collectors.joining;
 import static org.junit.Assert.assertEquals;
+
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 import org.junit.Before;
 import org.junit.Test;
@@ -24,7 +28,9 @@ public class BottlesTest {
     @Test
     public void song() throws Exception {
         String actual = bottles.song();
-        assertEquals(bottles.verses(99, 0), actual);                
+
+        assertEquals(Bottles.descendingRange(99, 0)
+                .mapToObj(n -> bottles.verse(n)).collect(Collectors.joining(LINE_BREAK)), actual);                
     }            
     
     @Test

@@ -31,4 +31,12 @@ public class BottlesTest {
                 + "Take one down and pass it around, 2 bottles of beer on the wall." + LINE_BREAK, 
                 actual);
     }
+    
+    @Test
+    public void verse_2() throws Exception {
+        String actual = bottles.verse(2);
+        assertEquals(
+                "2 bottles of beer on the wall, 2 bottles of beer." + LINE_BREAK
+                + "Take one down and pass it around, 1 bottle of beer on the wall." + LINE_BREAK, 
+                actual);    }
 }

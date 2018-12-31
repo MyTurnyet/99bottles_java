@@ -4,9 +4,29 @@ public class Bottles {
     private static final String LINE_BREAK = System.getProperty("line.separator");
 
     String verse(int number) {
-              
-        return number + " bottles of beer on the wall, " + number + " bottles of beer." + LINE_BREAK
-                + "Take one down and pass it around, " + (number - 1) 
-                + " bottle" + ((number - 1 == 1) ? "" : "s") + " of beer on the wall." + LINE_BREAK;
+        String theVerse;
+
+        switch (number) {
+        case 1:
+            theVerse = "1 bottle of beer on the wall, " + 
+                        "1 bottle of beer." + LINE_BREAK +
+                        "Take it down and pass it around, " + 
+                        "no more bottles of beer on the wall." + LINE_BREAK;
+            break;
+        case 2:
+            theVerse = number + " bottles of beer on the wall, " + 
+                        number + " bottles of beer." + LINE_BREAK +
+                        "Take one down and pass it around, " + 
+                        "1 bottle of beer on the wall." + LINE_BREAK;
+            break;
+        default:
+            theVerse = number + " bottles of beer on the wall, " + 
+                        number + " bottles of beer." + LINE_BREAK +
+                       "Take one down and pass it around, " + 
+                        (number - 1) + " bottles of beer on the wall." + LINE_BREAK;
+            break;
+        }
+
+        return theVerse;
     }
 }

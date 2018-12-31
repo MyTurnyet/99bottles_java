@@ -41,4 +41,11 @@ public class BottlesTest {
         assertEquals("1 bottle of beer on the wall, 1 bottle of beer." + LINE_BREAK
                 + "Take it down and pass it around, no more bottles of beer on the wall." + LINE_BREAK, actual);
     }
+    
+    @Test
+    public void verse_0() throws Exception {
+        String actual = bottles.verse(0);
+        assertEquals("No more bottles of beer on the wall, no more bottles of beer." + LINE_BREAK
+                + "Go to the store and buy some more, 99 bottles of beer on the wall." + LINE_BREAK, actual);
+    }
 }

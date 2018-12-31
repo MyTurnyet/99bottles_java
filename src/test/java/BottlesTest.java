@@ -13,6 +13,17 @@ public class BottlesTest {
     public void setUp() throws Exception {
         bottles = new Bottles();
     }
+    
+    @Test
+    public void verses_99_98() throws Exception {
+        String actual = bottles.verses(99, 98);
+        assertEquals(
+                "99 bottles of beer on the wall, 99 bottles of beer." + LINE_BREAK
+                + "Take one down and pass it around, 98 bottles of beer on the wall." + LINE_BREAK +
+                "98 bottles of beer on the wall, 98 bottles of beer." + LINE_BREAK
+                + "Take one down and pass it around, 97 bottles of beer on the wall." + LINE_BREAK, 
+                actual);
+    }
 
     @Test
     public void verse_99() throws Exception {

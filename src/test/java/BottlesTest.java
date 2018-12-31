@@ -47,7 +47,7 @@ public class BottlesTest {
         String actual = bottles.verse(99);
         assertEquals("99 bottles of beer on the wall, 99 bottles of beer." + LINE_BREAK
                 + "Take one down and pass it around, 98 bottles of beer on the wall." + LINE_BREAK, actual);
-    }
+    } 
 
     @Test
     public void verse_3() throws Exception {

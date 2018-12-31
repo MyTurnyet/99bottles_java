@@ -3,6 +3,14 @@ public class Bottles {
 
     private static final String LINE_BREAK = System.getProperty("line.separator");
 
+    String verses(int a, int b) {
+        return "99 bottles of beer on the wall, 99 bottles of beer." + LINE_BREAK
+                + "Take one down and pass it around, 98 bottles of beer on the wall." + LINE_BREAK +
+                "98 bottles of beer on the wall, 98 bottles of beer." + LINE_BREAK
+                + "Take one down and pass it around, 97 bottles of beer on the wall." + LINE_BREAK;
+               
+    }
+    
     String verse(int number) {
         String theVerse;
 

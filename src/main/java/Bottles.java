@@ -7,6 +7,10 @@ public class Bottles {
 
     private static final String LINE_BREAK = System.getProperty("line.separator");
 
+    String song() {
+        return verses(99, 0);
+    }
+
     String verses(int start, int end) {
         return descendingRange(start, end)
                 .mapToObj(bottleNumber -> verse(bottleNumber))
